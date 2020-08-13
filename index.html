@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cards.css">
+  
+  <title>Frontend Mentor | Social Media Dashboard with Theme Switcher</title>
+</head>
+<body>
+  <section class="container-outer">
+    <div class="container-inner">
+      <div class="container-inner__top">
+        <div class="top__heading">
+          <div class="top__heading__title">
+            <h1 class="top-title">Social Media Dashboard</h1>
+            <h3 class="follower-total">Total Followers: 23,004</h3>
+          </div>
+          <div class="top__heading__switch">
+            <h3 id="button-text">Dark Mode</h3>
+            <button type="button"><div class="switch"></div></button>
+          </div>
+        </div>
+      
+        <div class="cards-top">
+          <div class="card card-large card-fb">
+            <p class="card-large__social-name"><img src="images/icon-facebook.svg" alt="" class="social-icon-cl">@nathanf</p>
+            <p class="card-large__social-count">1987</p>
+            <p class="card-large__social-followers">Followers</p>
+            <p class="card-large__social-new up">12 Today</p>
+          </div>
+          <div class="card card-large card-tw">
+            <p class="card-large__social-name"><img src="images/icon-twitter.svg" alt="" class="social-icon-cl">@nathanf</p>
+            <p class="card-large__social-count">1044</p>
+            <p class="card-large__social-followers">Followers</p>
+            <p class="card-large__social-new up">99 Today</p>
+          </div>  
+          <div class="card card-large card-in">
+            <p class="card-large__social-name"><img src="images/icon-instagram.svg" alt="" class="social-icon-cl">@realnathanf</p>
+            <p class="card-large__social-count">11k</p>
+            <p class="card-large__social-followers">Followers</p>
+            <p class="card-large__social-new up">1099 Today</p>
+          </div>
+          <div class="card card-large card-yt">
+            <p class="card-large__social-name"><img src="images/icon-youtube.svg" alt="" class="social-icon-cl">Nathan F.</p>
+            <p class="card-large__social-count">8239</p>
+            <p class="card-large__social-followers">Subscribers</p>
+            <p class="card-large__social-new down">144 Today</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-inner__bottom">
+        <h2 class="bottom-title">Overview - Today</h2>
+        <div class="cards-bottom">
+          <div class="bottom-row">
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Page Views</p>
+                <img src="images/icon-facebook.svg" alt="Facebook icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">87</p>
+                <p class="card-small__percent up">3%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Likes</p>
+                <img src="images/icon-facebook.svg" alt="Facebook icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">52</p>
+                <p class="card-small__percent down">2%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Likes</p>
+                <img src="images/icon-instagram.svg" alt="Instagram icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">5462</p>
+                <p class="card-small__percent up">2257%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Profile Views</p>
+                <img src="images/icon-instagram.svg" alt="Instagram icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">52k</p>
+                <p class="card-small__percent up">1375%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-row">
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Retweets</p>
+                <img src="images/icon-twitter.svg" alt="Twitter icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">117</p>
+                <p class="card-small__percent up">303%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Likes</p>
+                <img src="images/icon-twitter.svg" alt="Twitter icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">507</p>
+                <p class="card-small__percent up">553%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Likes</p>
+                <img src="images/icon-youtube.svg" alt="YouTube icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">107</p>
+                <p class="card-small__percent down">19%</p>
+              </div>
+            </div>
+            <div class="card card-small">
+              <div class="card-small__top-row">
+                <p class="card-small__metric">Total Views</p>
+                <img src="images/icon-youtube.svg" alt="YouTube icon" class="social-icon-cs">
+              </div>
+              <div class="card-small__bottom-row">
+                <p class="card-small__count">1407</p>
+                <p class="card-small__percent down">12%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/anthonylazaro/">Anthony Lazaro</a>.
+    </div>
+  </section>
+  <script src="js/index.js"></script>
+</body>
+</html>

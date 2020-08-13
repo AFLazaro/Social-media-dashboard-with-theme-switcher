@@ -1,0 +1,284 @@
+/****** CARDS - GERNEAL ******/
+.card {
+    width: 23%;
+    background-color: hsl(227, 47%, 96%);
+    border-radius: .5rem;
+    border-radius: .5rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    
+    transition: all .5s;
+}
+
+.up {
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+}
+.up::before {
+    background-color: hsl(163, 72%, 41%);
+    display: inline-block;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    transform: translateY(-.3rem);
+    margin-right: .5rem;
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+    font-weight: 700;
+}
+.down::before {
+    background-color: hsl(356, 69%, 56%);
+    display: inline-block;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(50% 50%, 0 0, 100% 0);
+    transform: translateY(.3rem);
+    margin-right: .5rem;
+}
+
+.card:hover {
+    background-color: hsl(227, 47%, 90%);
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+
+/*** LARGE CARDS ***/
+.cards-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 670px) {
+    .cards-top {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.card-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 670px) {
+    .card-large {
+        width: 80%;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card-large {
+        width: 100%;
+    }
+}
+
+.social-icon-cl {
+    margin-right: 1rem;
+}
+
+.card-large__social-name {
+    display: inline-flex;
+    font-weight: 700;
+    color: hsl(228, 12%, 44%);
+    margin-bottom: 2rem;
+    vertical-align: middle;
+}
+
+.card-large__social-count {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) {
+    .card-large__social-count {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .card-large__social-count {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .card-large__social-count {
+        font-size: 4rem;
+    }
+}
+
+.card-large__social-followers {
+    color: hsl(228, 12%, 44%);
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.card-fb::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: hsl(208, 92%, 53%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .5rem .5rem 0 0;
+    flex-direction: row;
+}
+
+.card-tw::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: hsl(203, 89%, 53%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .5rem .5rem 0 0;
+    flex-direction: row;
+}
+
+.card-in::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(0.25turn, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .5rem .5rem 0 0;
+    flex-direction: row;
+}
+
+.card-yt::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    background: hsl(348, 97%, 39%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: .5rem .5rem 0 0;
+    flex-direction: row;
+}
+
+
+/*** BOTTOM CARDS ***/
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 670px) {
+    .cards-bottom {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .cards-bottom {
+        flex-direction: column;
+    }
+
+    .bottom-row {
+        width: 100%;
+    }
+}
+
+.bottom-title {
+    margin-bottom: 2rem;
+    color: hsl(228, 12%, 44%);
+}
+
+.card-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 670px) {
+    .card-small {
+        width: 80%;
+        margin: 0 auto 2rem auto;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card-small {
+        width: 100%;
+    }
+}
+
+.card-small__top-row {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.card-small__bottom-row {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-small__metric {
+    color: hsl(228, 12%, 44%);
+}
+
+.card-small__count {
+    font-size: 3.3rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .card-small__count {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .card-small__count {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .card-small__count {
+        font-size: 2.6rem;
+    }
+}
+
+
+
+
+/****** DARK MODE ******/
+/*** CARDS - GENERAL ***/
+.card--dark {
+    background-color: hsl(228, 28%, 20%);
+    transition: background-color .5s;
+}
+
+.card--dark:hover {
+    background-color: hsl(228, 28%, 30%);
+    transition: background-color .3s;
+    cursor: pointer;
+}
